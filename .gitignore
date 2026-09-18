@@ -1,0 +1,24 @@
+# MCUXpresso / Eclipse workspace metadata
+.metadata/
+.settings/
+
+# User-specific Eclipse launch configurations
+*.launch
+
+# MCUXpresso build directories
+Debug/
+Release/
+
+# Other common build directories
+build/
+bin/
+obj/
+
+# Compiler artifacts
+*.o
+*.d
+*.elf
+*.map
+*.axf
+*.hex
+*.bin
