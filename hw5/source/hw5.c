@@ -132,7 +132,8 @@ void process_button_press(button_t *button)
     button->press = PRESS_NONE;
 
     if (press == PRESS_LONG) {
-        select_led((led_t)(((uint32_t)selected_led + 1u) % LED_COUNT));
+    	selected_led = (led_t)(((uint32_t)selected_led + 1u) % LED_COUNT);
+        select_led(selected_led);
     } else if (press == PRESS_SHORT) {
         adc_start_conversion(POTENTIOMETER_PIN);
     }
